@@ -3,21 +3,119 @@
 @tailwind utilities;
 
 .slider-wrapper {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
-
 .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
-
 .slide.active {
-    opacity: 1;
+  opacity: 1;
+}
+.hover-icons {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px); /* Start below the image */
+}
+.product-card:hover .hover-icons {
+  opacity: 1;
+  transform: translateY(0); /* Move up to original position */
+}
+.testim-curv {
+  padding: 100px 0;
+  align-items: center;
+}
+.testim-curv .container-xxl {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.testim-curv .container-xxl .sec-head {
+  margin-bottom: 80px !important;
+}
+.testim-curv .container-xxl .sec-head .color-000 {
+  color: #000 !important;
+  font-weight: 600;
+}
+.testim-curv .review-swiper-container {
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.testim-curv .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+}
+.testim-curv .item {
+  background-position: center;
+  background-size: cover;
+  background: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    #292b33 0%,
+    #3a3a3d 90%
+  );
+  color: #fff;
+  border-color: transparent;
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.testim-curv .item .icon-img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0.2;
+  width: 40px;
+  height: 40px;
+}
+.testim-curv .item .icon-img img {
+  width: 100%;
+  height: 100%;
+}
+.testim-curv .item .text {
+  margin-bottom: 30px !important;
+}
+.testim-curv .item .text p {
+  font-size: 17px;
+  font-weight: 300;
+}
+.testim-curv .item .rate-star {
+  color: #eeb212;
+}
+.testim-curv .item .rate-star .fas {
+  font-weight: 900;
+}
+.testim-curv .item .cont {
+  display: flex !important;
+}
+.testim-curv .item .cont .img-flex {
+  display: flex;
+  align-items: center;
+}
+.testim-curv .item .cont .img-flex .img {
+  width: 35px;
+}
+.testim-curv .item .cont .img-flex .img img {
+  width: 100%;
+  height: 100%;
+}
+.testim-curv .item .cont .info {
+  display: flex;
+  align-items: center;
+}
+.testim-curv .item .cont .info .gr-sunset-text {
+  background-image: linear-gradient(to right, #f2709c, #ff9472);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
