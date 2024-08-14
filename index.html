@@ -20,78 +20,35 @@
   <body class="bg-gray-50 overflow-x-hidden">
     <!-- Header Section -->
     <header class="bg-gray-200">
-      <div
-        class="container mx-auto flex justify-between items-center py-4 px-6"
-      >
+      <div class="container mx-auto flex justify-between items-center py-4 px-6">
         <div class="text-3xl font-bold text-gray-700">ecomus</div>
-        <!-- Hamburger Menu for Mobile -->
         <div class="md:hidden">
-          <button
-            id="menu-button"
-            class="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
+          <button class="menu-button text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </button>
         </div>
-        <!-- Full Navigation Menu -->
-        <nav id="nav-menu" class="hidden md:flex space-x-6">
-          <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Shop</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Products</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Pages</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Blog</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Buy now</a>
+        <nav class="nav-menu hidden md:flex space-x-6">
+          <a href="/index.html" class="text-gray-600 hover:text-gray-900">Home</a>
+          <a href="/product.html" class="text-gray-600 hover:text-gray-900">Shop</a>
+          <a href="/product.html" class="text-gray-600 hover:text-gray-900">Products</a>
+          <a href="/product.html" class="text-gray-600 hover:text-gray-900">Buy now</a>
         </nav>
         <div class="hidden md:flex items-center space-x-4">
           <a href="#" class="text-gray-600 hover:text-gray-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21 21l-6-6m2-8.5A5.5 5.5 0 0111.5 13 5.5 5.5 0 016 7.5a5.5 5.5 0 1111 0z"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-8.5A5.5 5.5 0 0111.5 13 5.5 5.5 0 016 7.5a5.5 5.5 0 1111 0z" />
             </svg>
           </a>
           <a href="#" class="text-gray-600 hover:text-gray-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 14.25v-4.5m0 4.5l-2.25-2.25M12 9.75l2.25 2.25M4.5 7.5h15m-15 9h15m-15-9l-1.5 9h18l-1.5-9"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14.25v-4.5m0 4.5l-2.25-2.25M12 9.75l2.25 2.25M4.5 7.5h15m-15 9h15m-15-9l-1.5 9h18l-1.5-9" />
             </svg>
           </a>
         </div>
       </div>
-      <!-- Mobile Menu -->
-      <nav id="mobile-menu" class="md:hidden hidden space-y-2 px-6 pb-4">
+      <nav class="mobile-menu md:hidden hidden space-y-2 px-6 pb-4">
         <a href="#" class="block text-gray-600 hover:text-gray-900">Home</a>
         <a href="#" class="block text-gray-600 hover:text-gray-900">Shop</a>
         <a href="#" class="block text-gray-600 hover:text-gray-900">Products</a>
@@ -176,143 +133,42 @@
     </section>
     <!-- Section for Stunning Homepages -->
     <section class="bg-gray-50 py-16">
-      <div class="container mx-auto px-6 text-center">
-        <!-- Main Heading -->
-        <h1
-          class="font-extrabold text-transparent bg-clip-text text-6xl"
-          style="
-            background-image: linear-gradient(
-              to right,
-              #501e9c 0%,
-              #8169f1 30%,
-              #a44cee 73%,
-              #ff847f 100%
-            );
-          "
-        >
-          NEW FEATURE COLLECTION
-        </h1>
-
-        <!-- Subheading -->
-        <h2 class="text-2xl font-semibold text-gray-800 mt-4">
-          Stunning Homepages
-        </h2>
-        <p class="text-gray-600 mt-2 max-w-xl mx-auto">
-          A Great Collection Of Beautiful Website Templates For Your Need.
-          Choose The Best Suitable Template And Start Customizing It.
-        </p>
-
-        <!-- Templates Grid with Swiper.js -->
-        <div class="mt-12 overflow-hidden">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <!-- Template 1 -->
-              <div
-                class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden hover:border-4 border-indigo-500/50"
-              >
-                <img
-                  class="w-full h-[36rem] object-fill"
-                  src="/images/collections/collection-32.jpg"
-                  alt="App Landing"
-                />
-                <div class="p-4">
-                  <p class="font-light text-gray-500">20 items</p>
-                  <h3 class="font-semibold text-gray-800">Blazers</h3>
-                </div>
+        <div class="container mx-auto px-6 text-center">
+          <h1
+            class="font-extrabold text-transparent bg-clip-text text-6xl"
+            style="
+              background-image: linear-gradient(
+                to right,
+                #501e9c 0%,
+                #8169f1 30%,
+                #a44cee 73%,
+                #ff847f 100%
+              );
+            "
+          >
+            NEW FEATURE COLLECTION
+          </h1>
+          <h2 class="text-2xl font-semibold text-gray-800 mt-4">
+            Stunning Homepages
+          </h2>
+          <p class="text-gray-600 mt-2 max-w-xl mx-auto">
+            A Great Collection Of Beautiful Website Templates For Your Need.
+            Choose The Best Suitable Template And Start Customizing It.
+          </p>
+          <div class="mt-12 overflow-hidden">
+            <div class="swiper-container">
+              <div class="swiper-wrapper" id="template-swiper">
+                <!-- Templates will be rendered here -->
               </div>
-
-              <!-- Template 2 -->
-              <div
-                class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden hover:border-4 border-indigo-500/50"
-              >
-                <img
-                  class="w-full h-[36rem] object-fill"
-                  src="/images/collections/collection-33.jpg"
-                  alt="Digital Agency"
-                />
-                <div class="p-4">
-                  <p class="font-light text-gray-500">10 items</p>
-                  <h3 class="font-semibold text-gray-800">Sweaters</h3>
-                </div>
-              </div>
-
-              <!-- Template 3 -->
-              <div
-                class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden hover:border-4 border-indigo-500/50"
-              >
-                <img
-                  class="w-full h-[36rem] object-fill"
-                  src="/images/collections/collection-34.jpg"
-                  alt="Marketing Startup"
-                />
-                <div class="p-4">
-                  <p class="font-light text-gray-500">12 items</p>
-                  <h3 class="font-semibold text-gray-800">Sneakers</h3>
-                </div>
-              </div>
-              <div
-                class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden hover:border-4 border-indigo-500/50"
-              >
-                <img
-                  class="w-full h-[36rem] object-fill"
-                  src="/images/collections/collection-35.jpg"
-                  alt="Digital Agency"
-                />
-                <div class="p-4">
-                  <p class="font-light text-gray-500">21 items</p>
-                  <h3 class="font-semibold text-gray-800">Glasses</h3>
-                </div>
-              </div>
-              <div
-                class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden hover:border-4 border-indigo-500/50"
-              >
-                <img
-                  class="w-full h-[36rem] object-fill"
-                  src="/images/collections/collection-36.jpg"
-                  alt="Digital Agency"
-                />
-                <div class="p-4">
-                  <p class="font-light text-gray-500">40 items</p>
-                  <h3 class="font-semibold text-gray-800">Accessories</h3>
-                </div>
-              </div>
-              <div
-                class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden hover:border-4 border-indigo-500/50"
-              >
-                <img
-                  class="w-full h-[36rem] object-fill"
-                  src="/images/collections/collection-37.jpg"
-                  alt="Marketing Startup"
-                />
-                <div class="p-4">
-                  <p class="font-light text-gray-500">25 items</p>
-                  <h3 class="font-semibold text-gray-800">Men</h3>
-                </div>
-              </div>
-              <div
-                class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden hover:border-4 border-indigo-500/50"
-              >
-                <img
-                  class="w-full h-[36rem] object-fill"
-                  src="/images/collections/collection-38.jpg"
-                  alt="Marketing Startup"
-                />
-                <div class="p-4">
-                  <p class="font-light text-gray-500">35 items</p>
-                  <h3 class="font-semibold text-gray-800">Shoes</h3>
-                </div>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- Product Section -->
     <section class="lg:mx-[10rem] px-6 py-12 lg:py-24">
-      <h2
+        <h2
         class="font-extrabold text-transparent bg-clip-text text-5xl text-center pb-8"
         style="
           background-image: linear-gradient(
@@ -326,271 +182,34 @@
       >
         TOP TRENDING PRODUCTS
       </h2>
-      <div class="flex justify-between items-center mb-6">
-        <button class="text-gray-600 hover:text-black transition-colors">
-          &larr;
-        </button>
-        <a
-          href="#"
-          class="text-gray-600 hover:text-black transition-colors font-semibold"
-        >
-          <<-- VIEW ALL -->>
-        </a>
-        <button class="text-gray-600 hover:text-black transition-colors">
-          &rarr;
-        </button>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        <!-- Product Card Template -->
-        <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden relative product-card"
-        >
-          <div class="relative">
-            <img
-              src="/images/products/beige-2.jpg"
-              alt="Ribbed Tank Top"
-              class="w-full h-[28rem] object-cover"
-            />
-            <!-- Icons that appear on hover -->
-            <div
-              class="hover-icons flex justify-center space-x-4 mt-4 absolute bottom-4 left-1/4 transform -translate-x-1/2"
-            >
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-heart-o" style="font-size: 24px"></i>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <svg
-                  class="w-5 h-5 text-gray-700"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-eye" style="font-size: 24px"></i>
-              </button>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900">Ribbed Tank Top</h3>
-            <p class="text-gray-700">$16.95</p>
-            <div class="flex space-x-2 mt-2">
-              <span class="block w-4 h-4 bg-yellow-500 rounded-full"></span>
-              <span class="block w-4 h-4 bg-black rounded-full"></span>
-              <span
-                class="block w-4 h-4 bg-white border border-gray-300 rounded-full"
-              ></span>
-            </div>
-          </div>
+        <div class="flex justify-between items-center mb-6">
+          <button
+            class="text-gray-600 hover:text-black transition-colors"
+            id="prev-button"
+          >
+            &larr;
+          </button>
+          <a
+            href="/product.html"
+            class="text-gray-600 hover:text-black transition-colors font-semibold"
+          >
+            <<-- VIEW ALL -->>
+          </a>
+          <button
+            class="text-gray-600 hover:text-black transition-colors"
+            id="next-button"
+          >
+            &rarr;
+          </button>
         </div>
-        <!-- Product Card Template -->
-        <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden relative product-card"
-        >
-          <div class="relative">
-            <img
-              src="/images/products/light-blue-2.jpg"
-              alt="Ribbed Tank Top"
-              class="w-full h-[28rem] object-cover"
-            />
-            <!-- Icons that appear on hover -->
-            <div
-              class="hover-icons flex justify-center space-x-4 mt-4 absolute bottom-4 left-1/4 transform -translate-x-1/2"
-            >
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-heart-o" style="font-size: 24px"></i>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <svg
-                  class="w-5 h-5 text-gray-700"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-eye" style="font-size: 24px"></i>
-              </button>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900">Ribbed Tank Top</h3>
-            <p class="text-gray-700">$16.95</p>
-            <div class="flex space-x-2 mt-2">
-              <span class="block w-4 h-4 bg-yellow-500 rounded-full"></span>
-              <span class="block w-4 h-4 bg-black rounded-full"></span>
-              <span
-                class="block w-4 h-4 bg-white border border-gray-300 rounded-full"
-              ></span>
-            </div>
-          </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8" id="product-grid">
+          <!-- Products will be rendered here -->
         </div>
-        <!-- Product Card Template -->
-        <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden relative product-card"
-        >
-          <div class="relative">
-            <img
-              src="/images/products/white-12.jpg"
-              alt="Ribbed Tank Top"
-              class="w-full h-[28rem] object-cover"
-            />
-            <!-- Icons that appear on hover -->
-            <div
-              class="hover-icons flex justify-center space-x-4 mt-4 absolute bottom-4 left-1/4 transform -translate-x-1/2"
-            >
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-heart-o" style="font-size: 24px"></i>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <svg
-                  class="w-5 h-5 text-gray-700"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-eye" style="font-size: 24px"></i>
-              </button>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900">Ribbed Tank Top</h3>
-            <p class="text-gray-700">$16.95</p>
-            <div class="flex space-x-2 mt-2">
-              <span class="block w-4 h-4 bg-yellow-500 rounded-full"></span>
-              <span class="block w-4 h-4 bg-black rounded-full"></span>
-              <span
-                class="block w-4 h-4 bg-white border border-gray-300 rounded-full"
-              ></span>
-            </div>
-          </div>
-        </div>
-        <!-- Product Card Template -->
-        <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden relative product-card"
-        >
-          <div class="relative">
-            <img
-              src="/images/products/beige-2.jpg"
-              alt="Ribbed Tank Top"
-              class="w-full h-[28rem] object-cover"
-            />
-            <!-- Icons that appear on hover -->
-            <div
-              class="hover-icons flex justify-center space-x-4 mt-4 absolute bottom-4 left-1/4 transform -translate-x-1/2"
-            >
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-heart-o" style="font-size: 24px"></i>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <svg
-                  class="w-5 h-5 text-gray-700"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
-              </button>
-              <button
-                class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                <i class="fa fa-eye" style="font-size: 24px"></i>
-              </button>
-            </div>
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900">Ribbed Tank Top</h3>
-            <p class="text-gray-700">$16.95</p>
-            <div class="flex space-x-2 mt-2">
-              <span class="block w-4 h-4 bg-yellow-500 rounded-full"></span>
-              <span class="block w-4 h-4 bg-black rounded-full"></span>
-              <span
-                class="block w-4 h-4 bg-white border border-gray-300 rounded-full"
-              ></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
     <!--Offer banner CountDown  section-->
     <div
-      class="relative flex items-center justify-start min-h-screen bg-cover bg-center"
-      style="background-image: url('/images/slider/banner-countdown.png')"
+      class="relative flex items-center justify-start min-h-screen bg-cover bg-center overflow-hidden"
+      style="background-image: url('/images/slider/banner-countdown.png') "
     >
       <div
         class="bg-inherit bg-opacity-50 w-full md:w-1/2 mx-auto p-6 rounded-lg"
@@ -1297,5 +916,7 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="/index.js"></script>
+    <script type="module" src="/data.js" defer></script>
+    <script type="module" src="/main.js" defer></script>
   </body>
 </html>
