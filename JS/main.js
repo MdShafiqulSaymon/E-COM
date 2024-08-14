@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     )
     .join("");
 
-  
   // Initialize Swiper with custom autoplay settings
   var swiper = new Swiper(".swiper-container", {
     slidesPerView: 3,
