@@ -51,8 +51,6 @@
           <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
           <a href="#" class="text-gray-600 hover:text-gray-900">Shop</a>
           <a href="#" class="text-gray-600 hover:text-gray-900">Products</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Pages</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Blog</a>
           <a href="#" class="text-gray-600 hover:text-gray-900">Buy now</a>
         </nav>
         <div class="hidden md:flex items-center space-x-4">
@@ -84,10 +82,54 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
+                stroke-width="2"
                 d="M12 14.25v-4.5m0 4.5l-2.25-2.25M12 9.75l2.25 2.25M4.5 7.5h15m-15 9h15m-15-9l-1.5 9h18l-1.5-9"
               />
             </svg>
           </a>
+          <!-- Sort Dropdown -->
+          <div class="relative">
+            <button
+              id="sort-button"
+              class="text-gray-600 hover:text-gray-900 focus:outline-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <ul
+              id="sort-dropdown"
+              class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg"
+            >
+              <li>
+                <a
+                  href="#"
+                  id="sort-low-to-high"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                  >Price Low to High</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  id="sort-high-to-low"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                  >Price High to Low</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- Mobile Menu -->
@@ -102,7 +144,7 @@
     </header>
     <!-- Product Section -->
     <section class="lg:mx-[10rem] px-6 py-12 lg:py-24">
-        <h2
+      <h2
         class="font-extrabold text-transparent bg-clip-text text-5xl text-center pb-8"
         style="
           background-image: linear-gradient(
@@ -116,30 +158,30 @@
       >
         All Products
       </h2>
-        <div class="flex justify-between items-center mb-6">
-          <button
-            class="text-gray-600 hover:text-black transition-colors"
-            id="prev-button"
-          >
-            &larr;
-          </button>
-          <a
-            href="#"
-            class="text-gray-600 hover:text-black transition-colors font-semibold"
-          >
-            <<-- VIEW ALL -->>
-          </a>
-          <button
-            class="text-gray-600 hover:text-black transition-colors"
-            id="next-button"
-          >
-            &rarr;
-          </button>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8" id="all-product-grid">
-          <!-- Products will be rendered here -->
-        </div>
-      </section>
+      <div class="flex justify-between items-center mb-6">
+        <button
+          class="text-gray-600 hover:text-black transition-colors"
+          id="prev-button"
+        >
+          &larr;
+        </button>
+        <a
+          href="#"
+          class="text-gray-600 hover:text-black transition-colors font-semibold"
+        >
+          <<-- VIEW ALL -->>
+        </a>
+        <button
+          class="text-gray-600 hover:text-black transition-colors"
+          id="next-button"
+        >
+          &rarr;
+        </button>
+      </div>
+      <div class="flex flex-col" id="all-product-grid">
+        <!-- Products will be rendered here -->
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="/index.js"></script>
     <script type="module" src="/data.js" defer></script>
