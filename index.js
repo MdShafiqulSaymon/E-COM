@@ -17,7 +17,7 @@ function nextSlide() {
   showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 5000); // Change slide every 5 seconds
+setInterval(nextSlide, 2000); // Change slide every 5 seconds
 
 // JavaScript for responsive menu
 const menuButton = document.getElementById("menu-button");
@@ -28,34 +28,34 @@ menuButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
-// Initialize Swiper
-var swiper = new Swiper(".swiper-container", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  },
-});
+// // Initialize Swiper
+// var swiper = new Swiper(".swiper-container", {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   loop: true,
+//   autoplay: {
+//     delay: 1000,
+//     disableOnInteraction: false,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     640: {
+//       slidesPerView: 1,
+//       spaceBetween: 10,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//       spaceBetween: 20,
+//     },
+//     1024: {
+//       slidesPerView: 3,
+//       spaceBetween: 30,
+//     },
+//   },
+// });
 
 //Banner CountDown Funtion
 // Set the date we're counting down to

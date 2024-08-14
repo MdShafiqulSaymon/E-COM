@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecomus Landing Page with Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/swiper.min.css" />
+  </head>
+  <body class="bg-gray-50 overflow-x-hidden">
+    <!-- Header Section -->
+    <header class="bg-gray-200">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <div class="text-3xl font-bold text-gray-700">ecomus</div>
+        <!-- Hamburger Menu for Mobile -->
+        <div class="md:hidden">
+          <button
+            id="menu-button"
+            class="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Full Navigation Menu -->
+        <nav id="nav-menu" class="hidden md:flex space-x-6">
+          <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">Shop</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">Products</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">Pages</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">Blog</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">Buy now</a>
+        </nav>
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="#" class="text-gray-600 hover:text-gray-900">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-6-6m2-8.5A5.5 5.5 0 0111.5 13 5.5 5.5 0 016 7.5a5.5 5.5 0 1111 0z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 14.25v-4.5m0 4.5l-2.25-2.25M12 9.75l2.25 2.25M4.5 7.5h15m-15 9h15m-15-9l-1.5 9h18l-1.5-9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="md:hidden hidden space-y-2 px-6 pb-4">
+        <a href="#" class="block text-gray-600 hover:text-gray-900">Home</a>
+        <a href="#" class="block text-gray-600 hover:text-gray-900">Shop</a>
+        <a href="#" class="block text-gray-600 hover:text-gray-900">Products</a>
+        <a href="#" class="block text-gray-600 hover:text-gray-900">Pages</a>
+        <a href="#" class="block text-gray-600 hover:text-gray-900">Blog</a>
+        <a href="#" class="block text-gray-600 hover:text-gray-900">Buy now</a>
+      </nav>
+    </header>
+    <!-- Product Section -->
+    <section class="lg:mx-[10rem] px-6 py-12 lg:py-24">
+        <h2
+        class="font-extrabold text-transparent bg-clip-text text-5xl text-center pb-8"
+        style="
+          background-image: linear-gradient(
+            to right,
+            #501e9c 0%,
+            #8169f1 30%,
+            #a44cee 73%,
+            #ff847f 100%
+          );
+        "
+      >
+        All Products
+      </h2>
+        <div class="flex justify-between items-center mb-6">
+          <button
+            class="text-gray-600 hover:text-black transition-colors"
+            id="prev-button"
+          >
+            &larr;
+          </button>
+          <a
+            href="#"
+            class="text-gray-600 hover:text-black transition-colors font-semibold"
+          >
+            <<-- VIEW ALL -->>
+          </a>
+          <button
+            class="text-gray-600 hover:text-black transition-colors"
+            id="next-button"
+          >
+            &rarr;
+          </button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8" id="all-product-grid">
+          <!-- Products will be rendered here -->
+        </div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/index.js"></script>
+    <script type="module" src="/data.js" defer></script>
+    <script type="module" src="/product.js" defer></script>
+  </body>
+</html>
