@@ -48,7 +48,7 @@ The landing page is built with HTML, CSS (Tailwind CSS), and JavaScript, with th
    ```
    GO live
 ## Development
-1. **Deployend in Vercel**
+1. **Deployed in Vercel**
 2. Dependencies
    - **Tailwind CSS**: Utility-first CSS framework for styling.
    - **Font Awesome**: Icon library for visual element
