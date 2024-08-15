@@ -41,10 +41,10 @@ The landing page is built with HTML, CSS (Tailwind CSS), and JavaScript, with th
 
 1. **Clone the Repository**
    ```bash
-   [git clone https://github.com/yourusername/e-commerce-landing-page.git](https://github.com/MdShafiqulSaymon/E-COM.git)
+   https://github.com/MdShafiqulSaymon/E-COM.git
    ```
    ```
-   cd e-commerce-landing-page
+   cd E-COM
    ```
    GO live
 ## Development
