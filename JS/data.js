@@ -223,8 +223,8 @@ export const categories = [
     name: "Accessories",
     products: [
       {
-        image: "/images/products/blue.jpg",
-        alt: "Classic Sunglasses",
+        image: "/images/shop/gallery/gallery-3.jpg",
+        alt: "Gucchi Bag",
         price: "$29.99",
         colors: [
           { bg: "bg-gray-700" },
@@ -232,20 +232,20 @@ export const categories = [
         ],
       },
       {
-        image: "/images/products/brown-2.jpg",
-        alt: "Leather Belt",
+        image: "/images/shop/gallery/gallery-5.jpg",
+        alt: "Hat",
         price: "$30.95",
         colors: [{ bg: "bg-brown-500" }, { bg: "bg-black" }],
       },
       {
-        image: "/images/products/brown-3.jpg",
-        alt: "Leather Belt",
+        image: "/images/shop/gallery/gallery-6.jpg",
+        alt: "Nike Shoes",
         price: "$31.95",
         colors: [{ bg: "bg-brown-500" }, { bg: "bg-black" }],
       },
       {
-        image: "/images/products/brown.jpg",
-        alt: "Leather Belt",
+        image: "/images/shop/gallery/gallery-7.jpg",
+        alt: "Rayban Glasses",
         price: "$32.95",
         colors: [{ bg: "bg-brown-500" }, { bg: "bg-black" }],
       },
