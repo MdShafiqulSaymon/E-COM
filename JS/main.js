@@ -51,6 +51,113 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  function renderLoginModal() {
+    const modalHTML = `
+      <!-- Login Modal -->
+      <div id="login-modal" class=" overflow-scroll fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center z-50 transition-opacity duration-300 ease-in-out">
+        <div class="rounded-lg flex items-center justify-center bg-gray-100">
+          <div class="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden relative">
+            <!-- Left Side -->
+            <div class="flex flex-col items-center justify-center bg-orange-500 text-white p-8 md:w-1/2">
+              <img src="/images/logo/shopLogo.jpeg" alt="Shopee Logo" class="w-32 h-32 mb-4" />
+              <h1 class="text-3xl font-bold mb-2">Welcome back</h1>
+              <p class="text-center mb-8">
+                Manage your shop efficiently on Shopee with our Shopee Seller Centre
+              </p>
+              <img src="/images/logo/remove-bg-shopping-logo.png" alt="Welcome Image" class="w-96 h-72 mb-4 mt-auto" />
+            </div>
+  
+            <!-- Right Side -->
+            <div class="flex items-center justify-center p-8 md:w-1/2 relative">
+              <!-- Close Button -->
+              <button id="close-modal" class="absolute top-2 right-2 text-gray-600 hover:text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+  
+              <div class="w-full max-w-sm shadow-lg p-6 rounded-lg">
+                <h2 class="text-2xl font-bold mb-4 flex justify-center">Log in</h2>
+                <p class="text-sm text-gray-600 mb-6 flex justify-center">
+                  Please fill your information below
+                </p>
+                <form>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">EMAIL ID</label>
+                    <input
+                      type="email"
+                      placeholder="example@domain.com"
+                      class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      required
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">PASSWORD</label>
+                    <input
+                      type="password"
+                      placeholder="••••••••"
+                      class="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      required
+                    />
+                  </div>
+                  <div class="flex items-center justify-between mb-6">
+                    <label class="inline-flex items-center">
+                      <input type="checkbox" class="form-checkbox text-orange-500" />
+                      <span class="ml-2 text-sm text-gray-600">Remember me</span>
+                    </label>
+                    <a href="#" class="text-sm text-orange-500 hover:underline">Forgot Password?</a>
+                  </div>
+                  <button
+                    type="submit"
+                    class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg w-full focus:outline-none focus:shadow-outline"
+                  >
+                    LOGIN
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the modal HTML to the body
+    document.body.insertAdjacentHTML("beforeend", modalHTML);
+
+    // Functionality to toggle the modal
+    const modal = document.getElementById("login-modal");
+    const closeModalButton = document.getElementById("close-modal");
+    const userIcon = document.querySelectorAll(".user-icon");
+    const mobileLoginButton = document.getElementById("mobile-login-button");
+
+    // Show the modal when clicking the human icon or mobile login button
+    userIcon.forEach((icon) => {
+      icon.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+      });
+    });
+
+    mobileLoginButton.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+    });
+
+    // Close the modal when clicking the close button
+    closeModalButton.addEventListener("click", (event) => {
+      event.stopPropagation(); // Prevent the event from bubbling up
+      modal.classList.add("hidden");
+    });
+
+    // Close the modal when clicking outside the modal content
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+  }
+
+  // Call the function to render the modal functionality
+  renderLoginModal();
+
   // Render Product Section
   const productGrid = document.getElementById("product-grid");
 
